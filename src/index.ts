@@ -24,10 +24,3 @@ export function merge(collection1: number[], collection2: number[]): number[] {
   }
   return collection3;
 }
-
-let result = merge(
-  [1, 2, 6, 4, 7, 8, 10, 23, 43, 65],
-  [3, 4, 5, 6, 7, 13, 22, 45, 61, 63, 64]
-);
-
-console.log(result);
