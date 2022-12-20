@@ -1,4 +1,10 @@
-export function merge(collection1: number[], collection2: number[]): number[] {
+interface mergeFuntion {
+  (collection1: number[], collection2: number[]): number[];
+}
+
+let merge_function: mergeFuntion;
+
+merge_function = (collection1: number[], collection2: number[]) => {
   var collection3: number[] = [];
   var i: number = 0;
   var j: number = 0;
@@ -23,4 +29,6 @@ export function merge(collection1: number[], collection2: number[]): number[] {
     j++;
   }
   return collection3;
-}
+};
+
+module.exports = merge_function;
