@@ -1,8 +1,8 @@
-interface mergeFuntion {
+interface MergeFuntion {
   (collection1: number[], collection2: number[]): number[];
 }
 
-let merge_function: mergeFuntion;
+let merge_function: MergeFuntion;
 
 merge_function = (collection1: number[], collection2: number[]) => {
   var collection3: number[] = [];
